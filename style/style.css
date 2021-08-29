@@ -63,6 +63,8 @@ a {
 }
 .poster {
     display: flex;
+    position: relative;
+    z-index: 10;
 }
 .pretitle {
     font-size: 18px;
@@ -81,6 +83,17 @@ a {
     display: flex;
     margin-top: 47px;
 }
+.main_button{
+    width: 168px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #D02380;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+}
 .intitle {
     font-size: 14px;
     font-weight: 400;
@@ -89,15 +102,14 @@ a {
 }
 .over {
     color: #fff;
-    position: relative;
     z-index: 10;
 }
 .under {
     width: 125px;
     height: 125px;
     position: absolute;
-    top: 368px;
-    left: 716px;
+    top: 288px;
+    left: 320px;
     background: radial-gradient(805.21% 1487.23% at 209.6% -30%, #2D0D3A 0%, #6F0974 87.95%);;
     border-radius: 100px;
 }
@@ -111,8 +123,8 @@ a {
     width: 428px;
     height: 142px;
     background: linear-gradient(90.32deg, #3D3EEA -4.59%, #E96168 89.7%);
-    top: 200px;
-    left: 908px;
+    top: 118px;
+    left: 513px;
     opacity: 0.5;
 }
 .parthners {
@@ -138,6 +150,7 @@ a {
 }
 .face__text_item1 {
     padding-top: 71px;
+    padding-right: 93px;
 }
 .face__text_item2 {
     display: flex;
@@ -157,14 +170,45 @@ a {
     position: relative;
     top: 40px;
     left: -2px;
-    opacity: 0.5;
+    opacity: 0.8;
     mix-blend-mode: luminosity;
+    margin-bottom: 82px;
+}
+.cook {
+    margin-top: 26px;
+    display: flex;
+    justify-content: space-between;
+}
+.number_rad {
+    margin-right: 4px;
+    width: 18px;
+    height: 18px;
+    background: linear-gradient(124.25deg, #E96168 27.85%, rgba(208, 35, 128, 0) 141.53%);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+.number_linegrad {
+    margin: auto 0;
+    width: 160px;
+    height: 1px;
+    background: linear-gradient(248.24deg, #E96168 10.48%, #3D3EEA 73.23%);
+}
+.cook_flex {
+    display: flex;
+}
+.cook_text {
+    color:  #A183A6;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 5px;
 }
 
 
-
-
-.main_button{
+.main_button2{
+    margin: 61px auto;
     width: 168px;
     height: 50px;
     font-size: 14px;

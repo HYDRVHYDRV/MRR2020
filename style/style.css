@@ -176,6 +176,7 @@ a {
 }
 .cook {
     margin-top: 26px;
+    margin-bottom: 102px;
     display: flex;
     justify-content: space-between;
 }
@@ -205,8 +206,54 @@ a {
     font-weight: 400;
     margin-top: 5px;
 }
-
-
+.guest {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 26px;
+}
+.guest_item {
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
+}
+.allguest {
+    display: flex;
+    justify-content: space-between;
+}
+.guest_linegrad {
+    background: linear-gradient(248.24deg, #E96168 10.48%, #3D3EEA 73.23%);
+    width: 179px;
+    height: 1px;
+    margin-bottom: 14px;
+}
+.allguest_text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+.cards_list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.cards_list_item:nth-child(even) {
+    margin-top: 69px;
+}
+.cards_list_item_text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.cards_list_item_textname {
+    font-size: 14px;
+    color: #A183A6;
+    font-weight: 400;
+}
+.main_but {
+    max-width: max-content;
+    margin: 0 auto;
+}
 .main_button2{
     margin: 61px auto;
     width: 168px;

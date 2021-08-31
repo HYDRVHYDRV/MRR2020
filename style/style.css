@@ -105,18 +105,16 @@ a {
 }
 .poster_img {
     margin-top: 37px;
+    position: relative;
 }
-.post_under {
+.poster_img::after {
+    content: '';
     position: absolute;
     width: 428px;
     height: 142px;
     background: linear-gradient(90.32deg, #3D3EEA -4.59%, #E96168 89.7%);
-    top: 82px;
-    right: 0px;
-}
-.post_over {
-    position: relative;
-    z-index: 10;
+    top: 198px;
+    left: 766px;
 }
 .parthners {
     margin-top: 53px;
@@ -135,15 +133,15 @@ a {
     background: linear-gradient(226.08deg, #E96168 -24.61%, #480B51 78.74%);
     color: #fff;
     margin: 58px 0 88px 0;
-    position: absolute;
+    display: grid;
+    grid-template-columns: 290px 1fr;
+    grid-column-gap: 70px;
 }
 .face_text {
-    margin-left: 360px;
-    max-width: 400px;
+    max-width: 440px;
 }
 .face__text_item1 {
     padding-top: 71px;
-    padding-right: 93px;
 }
 .face__text_item2 {
     display: flex;
@@ -156,16 +154,14 @@ a {
     padding-top: 32px;
     padding-left: 9px;
 }
-.poloska {
-    padding-bottom: 67.5px;
-}
-.faceimg{
-    position: relative;
-    top: 40px;
-    left: -2px;
-    opacity: 0.8;
+.faceimg {
     mix-blend-mode: luminosity;
-    margin-bottom: 82px;
+    position: relative;
+}
+.faceimg::after {
+    content: '';
+    position: absolute;
+    top: 802px;
 }
 .cook {
     margin-top: 26px;

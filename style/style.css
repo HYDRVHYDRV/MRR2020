@@ -10,7 +10,7 @@ a {
 .header_conteiner {
     max-width: 941px;
     margin: 0 auto;
-    padding: 0 22px;
+    padding: 0 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,13 +21,16 @@ a {
 }
 .header__list {
     display: flex;
+    justify-content: space-between;
+    flex-grow: 0.5;
     list-style: none;
     color: #fff;
+    padding: 0;
 }
 .header__list_item {
     font-size: 12px;
     font-weight: 400;
-    padding: 0 13.5px;
+    padding-left: 13.5px;
     cursor: pointer;
 }
 .header__social {
@@ -313,9 +316,7 @@ a {
     cursor: pointer;
 }
 @media screen and (max-width: 768px) {
-    body {
-        display: none;
-    }
+    
 @media screen and (max-width: ) {
     
 }

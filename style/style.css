@@ -103,6 +103,10 @@ a {
     padding: 46px 5px 43px 10px;
     max-width: 110px;
 }
+.postimg {
+    position: relative;
+    z-index: 10;
+}
 .poster_img {
     margin-top: 37px;
     position: relative;
@@ -113,8 +117,8 @@ a {
     width: 428px;
     height: 142px;
     background: linear-gradient(90.32deg, #3D3EEA -4.59%, #E96168 89.7%);
-    top: 198px;
-    left: 766px;
+    top: 81px;
+    left: -28px;
 }
 .parthners {
     margin-top: 53px;
@@ -130,12 +134,22 @@ a {
     max-width: 640px;
 }
 .face{
-    background: linear-gradient(226.08deg, #E96168 -24.61%, #480B51 78.74%);
     color: #fff;
     margin: 58px 0 88px 0;
     display: grid;
     grid-template-columns: 290px 1fr;
     grid-column-gap: 70px;
+    position: relative;
+    z-index: 15;
+}
+.face::after {
+    content: '';
+    background: linear-gradient(226.08deg, #E96168 -24.61%, #480B51 78.74%);
+    position: absolute;
+    height: 240px;
+    width: 100%;
+    z-index: -9;
+    top: 24px;
 }
 .face_text {
     max-width: 440px;
@@ -156,12 +170,6 @@ a {
 }
 .faceimg {
     mix-blend-mode: luminosity;
-    position: relative;
-}
-.faceimg::after {
-    content: '';
-    position: absolute;
-    top: 802px;
 }
 .cook {
     margin-top: 26px;
@@ -294,4 +302,13 @@ a {
 .footer__social_item {
     padding-left: 20px;
     cursor: pointer;
+}
+@media screen and (max-width: ) {
+    
+}
+@media screen and (max-width: ) {
+    
+}
+@media screen and (max-width: ) {
+    
 }

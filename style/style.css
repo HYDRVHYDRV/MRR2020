@@ -54,12 +54,17 @@ a {
     max-width: 941px;
     margin: 0 auto;
     padding: 0 22px;
+    overflow: hidden;
 }
 .poster {
     display: flex;
+    position: relative;
 }
 .poster_text {
+    position: relative;
     margin-right: 72px;
+    max-width: 450px;
+    z-index: 100;
 }
 .pretitle {
     font-size: 18px;
@@ -103,6 +108,10 @@ a {
     padding: 46px 5px 43px 10px;
     max-width: 110px;
 }
+.post_img {
+    position: absolute;
+    right: 0;
+}
 .postimg {
     position: relative;
     z-index: 10;
@@ -143,7 +152,7 @@ a {
     z-index: 15;
 }
 .face::after {
-    content: '';
+    content: ' ';
     background: linear-gradient(226.08deg, #E96168 -24.61%, #480B51 78.74%);
     position: absolute;
     height: 240px;
@@ -303,9 +312,10 @@ a {
     padding-left: 20px;
     cursor: pointer;
 }
-@media screen and (max-width: ) {
-    
-}
+@media screen and (max-width: 768px) {
+    body {
+        display: none;
+    }
 @media screen and (max-width: ) {
     
 }

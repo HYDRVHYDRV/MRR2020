@@ -16,6 +16,9 @@ a {
     align-items: center;
     height: 80px;
 }
+.burger {
+    display: none;
+}
 .header_img_logo {
     cursor: pointer;
 }
@@ -145,6 +148,9 @@ a {
     text-transform: uppercase;
     max-width: 640px;
 }
+.vkl {
+    display: none;
+}
 .face{
     color: #fff;
     margin: 58px 0 88px 0;
@@ -217,6 +223,18 @@ a {
     font-weight: 400;
     margin-top: 5px;
 }
+.cooktextad {
+    display: none;
+}
+.cookstrel {
+    display: none;
+}
+.cookunder {
+    display: none;
+}
+.cooklinegrad {
+    display: none;
+}
 .guest {
     display: flex;
     justify-content: space-between;
@@ -227,6 +245,9 @@ a {
     font-weight: 300;
     color: #fff;
     text-transform: uppercase;
+}
+.streloff {
+    display: none;
 }
 .allguest {
     display: flex;
@@ -278,6 +299,9 @@ a {
     cursor: pointer;
     border: none;
 }
+.altfoot {
+    display: none;
+}
 .line_grad {
     background: linear-gradient(248.24deg, #E96168 10.48%, #3D3EEA 73.23%);
     height: 3px;
@@ -316,8 +340,266 @@ a {
     cursor: pointer;
 }
 @media screen and (max-width: 768px) {
-    
+    .burger {
+        display: block;
+        width: 20px;
+        height: 20px;
+        position: relative;
+    }
+    #check_menu {
+        display: none;
+    }
+    label {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        width: 170px;
+        height: 200px;
+        z-index: 150;
+        line-height: 20px;
+    }
+    .burger_line {
+        position: absolute;
+        top: 5px;
+        left: 1xp;
+        width: 18.5px;
+        height: 1px;
+        background-color: #FF3EA6;
+        transition: 0.5s all;
+    }
+    .second, .third {
+        top: 9px;
+    }
+    .fourth {
+        top: 13px;
+    }
+    .main_menu {
+        display: block;
+        position: absolute;
+        width: 170px;
+        max-height: 0;
+        font-size: 0;
+        bottom: 0;
+        left: 0;
+        transform: translateY(100%);
+        z-index: 200;
+        overflow: hidden;
+        transition: 0.5s all;
+    }
+    .menu_list {
+        display: block;
+        width: 170px;
+        height: 20px;
+        padding: 15px;
+        color: #fff;
+        text-decoration: none;
+        border-top: 1px solid #fff;
+        background: #27083A;
+    }
+    #check_menu:checked ~ .main_menu {
+        max-height: 300px;
+        font-size: 14px;
+    }
+    #check_menu:checked ~ .first {
+        display: none;
+    }
+    #check_menu:checked ~ .second {
+        transform: rotate(-45deg);
+    }
+    #check_menu:checked ~ .third {
+        transform: rotate(45deg);
+    }
+    .header__list {
+        display: none;
+    }
+    #check_menu:checked ~ .fourth {
+        display: none;
+    }
+    .header__social {
+        display: none;
+    }
+    .cook {
+        display: block;
+        margin-bottom: 32px;
+    }
+    .cookstrel {
+        display: block;
+    }
+    .cook_flex {
+        align-items: center;
+    }
+    .cook_flex_ad {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+    }
+    .cookunder {
+        display: block;
+        max-width: 370px;
+        color: #A183A6;
+        font-size: 12px;
+    }
+    .cooklinegrad {
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: linear-gradient(248.24deg, #E96168 10.48%, #3D3EEA 73.23%);
+        margin: 10px 0;
+    }
+    .guestoff {
+        display: none;
+    }
+    .streloff {
+        display: block;
+    }
+    .line_grad {
+        display: none;
+    }
+    .number_linegrad {
+        display: none;
+    }
+    .cook_text {
+        display: none;
+    }
+    .cooktextad {
+        display: block;
+        color: #A183A6;
+        font-size: 12px;
+    }
+    .footer {
+        display: none;
+    }
+    .altfoot {
+        display: block;
+        max-width: 941px;
+        margin: 0 auto;
+    }
+    .main_button2 {
+        margin-top: 32px;
+        margin-bottom: 24px;
+    }
+    .prov{
+        display: flex;
+        justify-content: space-around;
+    }
+    .altsocial {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    .altsocit {
+        list-style: none;
+        flex-grow: 0.5;
+        cursor: pointer;
+        padding: 10px;
+    }
+    .altlist {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        list-style: none;
+        color: #fff;
+        font-size: 12px;
+        padding: 0;
+    }
+    .altlistit {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 4px;
+    }
+    .altlistit:nth-child(even){
+        display: flex;
+        justify-content: flex-end;
+    }
+    .altlogo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 23px;
+    }
+    .main_button {
+        width: 150px;
+        height: 36px;
+    }
+    .main_button2 {
+        margin: 32px auto;
+        width: 150px;
+        height: 36px;
+    }
 }    
-@media screen and (max-width: 576px) {
+@media screen and (max-width:679px) {
+    .pretitle {
+        font-size: 12px;
+        margin-top: 48px;
+    }
+    .title{
+        font-size: 24px;
+        margin-top: 10px;
+    }
+    .poster_img {
+        margin-top: 0;
+    }
+    .postimg {
+        width: 232px;
+        height: 232px;
+        top: -47px;
+        right: 0px;
+    }
+    .poster_img::after{
+        background: linear-gradient(90.32deg, #0601A6 -3.92%, #E96168 89.7%);
+        width: 232px;
+        height: 83px;
+        top: 0;
+        left: 0px;
+    }
+    .over {
+        display: none;
+    }
+    .intitle {
+        display: none;
+    }
+    .parthners {
+        display: none;
+    }
+    .heading {
+        font-size: 14px;
+        max-width: 350px;
+    }
+    .face {
+        display: none;
+    }
+    .face__text_item1 {
+        display: block;
+    }
     
+    
+    .vkl {
+        display: flex;
+        font-size: 14px;
+        font-weight: 400;
+        color: #fff;
+    }
+    .vklimg {
+        align-self: flex-end;
+        margin-bottom: 17px;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 575px){
+    .title {
+        max-width: 190px; 
+    }
+    
+    .poster_img::after{
+        top: 0;
+        left: 0px;
+    }
+}
+@media screen and (max-width: 425px){
+    .postimg {
+        right: -67px;
+    }
+    .poster_img::after{
+        left: 67px;
+    }
 }

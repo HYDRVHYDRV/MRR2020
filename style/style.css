@@ -217,6 +217,9 @@ a {
 .cook_flex {
     display: flex;
 }
+.cookdown {
+    display: none;
+}
 .cook_text {
     color:  #A183A6;
     font-size: 14px;
@@ -358,7 +361,7 @@ a {
     top: 50%;
     transform: translate(-50%, -50%);
     padding: 32px 20px;
-    background: linear-gradient(156.46deg, #FF3EA6 1.02%, rgba(203, 8, 101, 0) 158.81%);
+    background: #FF3EA6;
     border-radius: 20px;
 }
 .popup form {
@@ -480,6 +483,33 @@ a {
     .cookstrel {
         display: block;
     }
+    .cookdown {
+        display: none;
+    }
+    #btn1.active1 img.cookdown {
+        display: block;
+    }
+    #btn1.active1 img.cookstrel {
+        display: none;
+    }
+    #btn2.active2 img.cookdown {
+        display: block;
+    }
+    #btn2.active2 img.cookstrel {
+        display: none;
+    }
+    #btn3.active3 img.cookdown {
+        display: block;
+    }
+    #btn3.active3 img.cookstrel {
+        display: none;
+    }
+    #btn4.active4 img.cookdown {
+        display: block;
+    }
+    #btn4.active4 img.cookstrel {
+        display: none;
+    }
     .cook_flex {
         align-items: center;
     }
@@ -487,6 +517,9 @@ a {
         display: flex;
         justify-content: space-between;
         font-size: 12px;
+    }
+    p#text1, p#text2, p#text3, p#text4 {
+        display: none;
     }
     .cookunder {
         display: block;
